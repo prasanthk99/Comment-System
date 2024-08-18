@@ -1,0 +1,209 @@
+.header {
+    margin: 6px 20px;
+    display: flex;
+    justify-content: space-between;
+  
+    button {
+      background-color: transparent;
+      border: none;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+  
+  .content {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 6px;
+    margin: 20px 6vw;
+    padding: 30px;
+  }
+  
+  body {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .inputBox {
+    padding: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 4px;
+  
+    .quill {
+      margin: 8px 0;
+    }
+  
+    .inputbtns {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    button {
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      width: 60px;
+      height: 40px;
+      cursor: pointer;
+    }
+  }
+  
+  .comments {
+    .sort-btns {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .comment {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 10px;
+    padding: 10px;
+  
+    .comment-profile {
+      display: flex;
+      align-items: center;
+  
+      img {
+        width: 40px;
+        border-radius: 50%;
+      }
+    }
+  
+    img {
+      width: 150px;
+      border-radius: 8px;
+    }
+  
+    .reply-tab {
+      margin: 8px 0;
+    }
+  
+    .reply-btn {
+      border-color: #fff;
+      border-left: 1px solid;
+      border-right: 1px solid;
+      padding: 0 10px;
+  
+      a {
+        cursor: pointer;
+        margin: 2px;
+      }
+    }
+  
+    .font-semibold {
+      margin-left: 6px;
+    }
+  
+    .comment-footer {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+  }
+  
+  .google-signin {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    button {
+      background-color: rgb(64, 129, 236);
+      color: white;
+      padding: 6px;
+      border: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+  
+      img {
+        margin-right: 8px;
+        border-radius: 4px;
+      }
+    }
+  }
+  
+  .emoji-tab {
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+  
+    span {
+      border: 1px solid;
+      padding: 4px;
+      margin: 0 2px;
+      border-radius: 20px;
+    }
+  }
+  
+  .emojis {
+    position: absolute;
+    top: -16px;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid;
+  
+    button {
+      border: none;
+      background-color: transparent;
+      font-size: 1.2rem;
+      cursor: pointer;
+  
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+  
+  .fa-smile {
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  
+  .reply-form-btns {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 6px;
+  
+    button {
+      margin: 4px;
+      padding: 4px;
+  
+      &:last-child {
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        width: 60px;
+        height: 40px;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .line-clamp-5 {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .text-expand {
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .inputBox {
+      .inputbtns {
+        display: block;
+      }
+    }
+  }
+  
